@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper .main__columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+}
+.wrapper .container {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper .main__columns {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main__columns .main__column {
+    max-width: 50%;
+  }
+}
+.wrapper .main__columns .right-column .image {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .wrapper .main__columns {
+    flex-direction: column;
+  }
+}
+.wrapper .header {
+  position: sticky;
+  top: 0px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 30px;
+  background-color: lightgray;
+  text-transform: uppercase;
+}
+.wrapper .header #header_menu {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.wrapper .header #header-container label,
+.wrapper .header #hamburger {
+  display: none;
+}
+.wrapper .header #header_menu {
+  display: flex;
+}
+.wrapper .header #header_menu a {
+  width: 20%;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .wrapper .header #header-container label {
+    display: inline-block;
+    background: lightgray;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-left: 98%;
+  }
+  .wrapper .header #header_menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    color: black;
+  }
+  .wrapper .header #header_menu {
+    display: none;
+  }
+  .wrapper .header #header-container input:checked ~ #header_menu {
+    display: block;
+  }
+  .wrapper .header #header_menu a:hover {
+    background-color: darkgray;
+  }
+}
+.wrapper .main .main__titles {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.wrapper .h1 {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.wrapper .h2 {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.wrapper .h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: gray;
+  padding-bottom: 20px;
+}
+.wrapper .h3__title {
+  padding-bottom: 20px;
+}
+.wrapper .main__battery, .wrapper .main__design, .wrapper .main__sport, .wrapper .main__health {
+  padding-bottom: 50px;
+}
+.wrapper .bottom {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.wrapper .bottom a {
+  display: block;
+  height: 50px;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding-top: 11px;
+  padding-bottom: 5px;
+  color: black;
+  font-weight: 500;
+}
+.wrapper .bottom a:hover {
+  background-color: lightgrey;
+}
+.wrapper .rights {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+}
